@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "918166739906",
+    "firebase_url": "https://t-mobile-rescuw.firebaseio.com",
+    "project_id": "t-mobile-rescuw",
+    "storage_bucket": "t-mobile-rescuw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918166739906:android:80ddf6623af98703",
+        "android_client_info": {
+          "package_name": "com.igalata.bubblepickerdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918166739906-6fa9f1oihafarpnh2bcv1h3s3q70u3ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8gxmoIDP3hmOu-hy1WpjITrykqGzkm0U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

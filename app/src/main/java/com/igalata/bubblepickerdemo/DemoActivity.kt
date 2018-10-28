@@ -6,14 +6,11 @@ import android.os.Build
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
-import android.widget.Button
-import android.widget.ImageButton
 import android.widget.Toast
 import com.igalata.bubblepicker.BubblePickerListener
 import com.igalata.bubblepicker.adapter.BubblePickerAdapter
 import com.igalata.bubblepicker.model.BubbleGradient
 import com.igalata.bubblepicker.model.PickerItem
-import com.igalata.bubblepickerdemo.R.id.subtitleTextView
 import kotlinx.android.synthetic.main.activity_demo.*
 
 /**
@@ -34,7 +31,7 @@ class DemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_demo)
-
+        val ss:String = intent.getStringExtra("number")
        // titleTextView.typeface = mediumTypeface
         //subtitleTextView.typeface = boldTypeface
        // hintTextView.typeface = regularTypeface
@@ -70,6 +67,7 @@ class DemoActivity : AppCompatActivity() {
         picker.listener = object : BubblePickerListener {
             override fun onBubbleSelected(item: PickerItem) = toast("${item.title} selected").also {
                 val intent = Intent(this@DemoActivity,MainActivity::class.java)
+                intent.putExtra("hello",item.title+":"+ss);
                 startActivity(intent)
             }
 
