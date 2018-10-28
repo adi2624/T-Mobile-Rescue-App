@@ -64,6 +64,19 @@
             android:textColor="@color/roseEnd" />
 
 
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact" />
+
+
+
     </LinearLayout>
 
     <android.support.design.bottomappbar.BottomAppBar
