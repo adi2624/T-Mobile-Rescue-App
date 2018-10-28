@@ -31,6 +31,8 @@ class DemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_demo)
+        //actionBar.hide();
+        getSupportActionBar()!!.hide();
         val ss:String = intent.getStringExtra("number")
        // titleTextView.typeface = mediumTypeface
         //subtitleTextView.typeface = boldTypeface
