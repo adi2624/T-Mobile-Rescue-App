@@ -3,19 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@android:color/background_dark"
+    android:backgroundTint="@android:color/black"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="149dp"
         android:layout_gravity="center"
         android:layout_marginTop="26dp"
+        android:fontFamily="serif"
+        android:fontFeatureSettings="?android:attr/candidatesTextStyleSpans"
         android:gravity="center"
         android:text="Welcome to T-Mobile Rescue!"
-        android:textAllCaps="true"
-        android:textColor="@color/colorAccent"
+        android:textAllCaps="false"
+        android:textColor="@color/roseEnd"
         android:textSize="49sp" />
 
     <TextView
@@ -24,9 +27,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="-7dp"
+        android:fontFamily="serif"
         android:gravity="center"
         android:text=" We're glad you're here."
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/roseEnd"
         android:textSize="16sp" />
 
     <TextView
@@ -35,16 +39,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="14dp"
+        android:fontFamily="serif"
         android:gravity="center"
         android:lineSpacingMultiplier="1"
         android:text="Choose what best decribes your problem."
-        android:textColor="#9b9b9b"
+        android:textColor="@color/roseEnd"
         android:textSize="14sp" />
 
     <com.igalata.bubblepicker.rendering.BubblePicker
         android:id="@+id/picker"
         android:layout_width="match_parent"
         android:layout_height="379dp"
-        app:backgroundColor="@android:color/white" />
+        android:backgroundTint="@android:color/black"
+        app:backgroundColor="@android:color/background_dark" />
 
 </LinearLayout>
