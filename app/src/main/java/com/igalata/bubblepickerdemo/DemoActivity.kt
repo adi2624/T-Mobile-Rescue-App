@@ -1,15 +1,19 @@
 package com.igalata.bubblepickerdemo
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Build
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import com.igalata.bubblepicker.BubblePickerListener
 import com.igalata.bubblepicker.adapter.BubblePickerAdapter
 import com.igalata.bubblepicker.model.BubbleGradient
 import com.igalata.bubblepicker.model.PickerItem
+import com.igalata.bubblepickerdemo.R.id.subtitleTextView
 import kotlinx.android.synthetic.main.activity_demo.*
 
 /**
@@ -62,12 +66,22 @@ class DemoActivity : AppCompatActivity() {
         colors.recycle()
         images.recycle()
 
-        picker.bubbleSize = 20
+        picker.bubbleSize = 40
         picker.listener = object : BubblePickerListener {
-            override fun onBubbleSelected(item: PickerItem) = toast("${item.title} selected")
+            override fun onBubbleSelected(item: PickerItem) = toast("${item.title} selected").also {
+                val intent = Intent(this@DemoActivity,MainActivity::class.java)
+                startActivity(intent)
+            }
 
             override fun onBubbleDeselected(item: PickerItem) = toast("${item.title} deselected")
+
         }
+
+
+    }
+
+    fun startAct(){
+
     }
 
     override fun onResume() {
