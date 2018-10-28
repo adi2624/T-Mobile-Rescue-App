@@ -1,56 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
-    android:backgroundTint="@android:color/black"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="149dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="26dp"
-        android:fontFamily="serif"
-        android:fontFeatureSettings="?android:attr/candidatesTextStyleSpans"
-        android:gravity="center"
-        android:text="Welcome to T-Mobile Rescue!"
-        android:textAllCaps="false"
-        android:textColor="@color/roseEnd"
-        android:textSize="49sp" />
-
-    <TextView
-        android:id="@+id/subtitleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-7dp"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:text=" We're glad you're here."
-        android:textColor="@color/roseEnd"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/hintTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="14dp"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:lineSpacingMultiplier="1"
-        android:text="Choose what best decribes your problem."
-        android:textColor="@color/roseEnd"
-        android:textSize="14sp" />
-
-    <com.igalata.bubblepicker.rendering.BubblePicker
-        android:id="@+id/picker"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="379dp"
-        android:backgroundTint="@android:color/black"
-        app:backgroundColor="@android:color/background_dark" />
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="149dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:autoText="false"
+            android:fontFamily="serif"
+            android:fontFeatureSettings="?android:attr/candidatesTextStyleSpans"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:text="Welcome to T-Mobile Rescue!"
+            android:textAllCaps="false"
+            android:textColor="@color/roseEnd"
+            android:textSize="49sp" />
+
+        <TextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-7dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text=" We're glad you're here."
+            android:textColor="@color/roseEnd"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hintTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1"
+            android:text="Choose what best decribes your problem."
+            android:textColor="@color/roseEnd"
+            android:textSize="14sp" />
+
+        <com.igalata.bubblepicker.rendering.BubblePicker
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="292dp"
+            android:backgroundTint="@android:color/white"
+            app:backgroundColor="@android:color/white" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

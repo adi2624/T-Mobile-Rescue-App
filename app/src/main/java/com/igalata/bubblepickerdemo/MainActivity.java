@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView box = findViewById(R.id.textView);
-        String message = "Please record a description of your problem!";
-        box.setText(message);
 
-        ImageButton mic = findViewById(R.id.btnSpeak);
+        String message = "Please record a description of your problem!";
+        //box.setText(message);
+
+        ImageButton mic = findViewById(R.id.fab);
         mic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        TextView results = findViewById(R.id.Results);
+        TextView results = findViewById(R.id.textView2);
         switch (requestCode) {
             case REQ_CODE_SPEECH_INPUT: {
                 if (resultCode == RESULT_OK && null != data) {

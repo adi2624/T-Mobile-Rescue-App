@@ -35,9 +35,9 @@ class DemoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_demo)
 
-        titleTextView.typeface = mediumTypeface
-        subtitleTextView.typeface = boldTypeface
-        hintTextView.typeface = regularTypeface
+       // titleTextView.typeface = mediumTypeface
+        //subtitleTextView.typeface = boldTypeface
+       // hintTextView.typeface = regularTypeface
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             subtitleTextView.letterSpacing = 0.06f
             hintTextView.letterSpacing = 0.05f
